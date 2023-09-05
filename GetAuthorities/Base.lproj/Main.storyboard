@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kyI-8D-2Rh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetAuthorities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="JF2-lP-Mw4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-366"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="PKq-xl-jyW">
+            <objects>
+                <viewController id="6wY-qv-Mfa" customClass="FourthViewController" customModule="GetAuthorities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGF-er-pWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pya-7q-Fk0">
+                                <rect key="frame" x="100" y="59" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F6s-De-Qlx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="btn1">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="6wY-qv-Mfa" eventType="touchUpInside" id="tO4-kC-Gv7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwG-A2-JzT">
+                                <rect key="frame" x="100" y="117" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yiD-pX-9Rm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="btn2">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn2:" destination="6wY-qv-Mfa" eventType="touchUpInside" id="OY7-Y5-6Pv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fourth ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDv-f5-u9d">
+                                <rect key="frame" x="77" y="175" width="239" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HKX-D2-Z7V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qDv-f5-u9d" firstAttribute="top" secondItem="XwG-A2-JzT" secondAttribute="bottom" constant="8" symbolic="YES" id="Bww-3g-p8x"/>
+                            <constraint firstItem="Pya-7q-Fk0" firstAttribute="top" secondItem="HKX-D2-Z7V" secondAttribute="top" id="DyE-5Q-nMr"/>
+                            <constraint firstItem="HKX-D2-Z7V" firstAttribute="trailing" secondItem="Pya-7q-Fk0" secondAttribute="trailing" constant="100" id="RZu-6d-VVC"/>
+                            <constraint firstItem="qDv-f5-u9d" firstAttribute="centerX" secondItem="mGF-er-pWZ" secondAttribute="centerX" id="mWm-Xb-ZXo"/>
+                            <constraint firstItem="HKX-D2-Z7V" firstAttribute="trailing" secondItem="XwG-A2-JzT" secondAttribute="trailing" constant="100" id="nyh-BT-W26"/>
+                            <constraint firstItem="XwG-A2-JzT" firstAttribute="leading" secondItem="HKX-D2-Z7V" secondAttribute="leading" constant="100" id="tdq-1M-aHT"/>
+                            <constraint firstItem="XwG-A2-JzT" firstAttribute="top" secondItem="Pya-7q-Fk0" secondAttribute="bottom" constant="8" symbolic="YES" id="v3W-jM-yJ4"/>
+                            <constraint firstItem="Pya-7q-Fk0" firstAttribute="leading" secondItem="HKX-D2-Z7V" secondAttribute="leading" constant="100" id="zlJ-i2-CYO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Dsf-gH-OpB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPn-f6-OtK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="675"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="XsH-B0-gHC">
+            <objects>
+                <viewController id="33Z-t1-Olo" customClass="ThirdViewController" customModule="GetAuthorities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xv5-e6-s2R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMG-o2-9hf">
+                                <rect key="frame" x="100" y="59" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X9D-Ix-QHH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="카메라 권한">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="33Z-t1-Olo" eventType="touchUpInside" id="XrV-A6-HG7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7X-1J-Gqg">
+                                <rect key="frame" x="100" y="117" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d2A-7P-Kwf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="qIB-rY-Pf8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="앨범 권한">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn2:" destination="33Z-t1-Olo" eventType="touchUpInside" id="jDd-Ze-fCV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thrid ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxj-nM-1OU">
+                                <rect key="frame" x="84.666666666666686" y="175" width="224" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8QX-fP-DWe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8QX-fP-DWe" firstAttribute="trailing" secondItem="Z7X-1J-Gqg" secondAttribute="trailing" constant="100" id="4yJ-rf-pZK"/>
+                            <constraint firstItem="Z7X-1J-Gqg" firstAttribute="top" secondItem="QMG-o2-9hf" secondAttribute="bottom" constant="8" symbolic="YES" id="9dq-3F-prC"/>
+                            <constraint firstItem="QMG-o2-9hf" firstAttribute="top" secondItem="8QX-fP-DWe" secondAttribute="top" id="D9H-hd-vQU"/>
+                            <constraint firstItem="Z7X-1J-Gqg" firstAttribute="leading" secondItem="8QX-fP-DWe" secondAttribute="leading" constant="100" id="KuP-mM-kr6"/>
+                            <constraint firstItem="8QX-fP-DWe" firstAttribute="trailing" secondItem="Z7X-1J-Gqg" secondAttribute="trailing" constant="100" id="QVw-Mk-7rs"/>
+                            <constraint firstItem="QMG-o2-9hf" firstAttribute="leading" secondItem="8QX-fP-DWe" secondAttribute="leading" constant="100" id="kgI-YJ-ChQ"/>
+                            <constraint firstItem="Uxj-nM-1OU" firstAttribute="top" secondItem="Z7X-1J-Gqg" secondAttribute="bottom" constant="8" symbolic="YES" id="kwB-2I-tS1"/>
+                            <constraint firstItem="Uxj-nM-1OU" firstAttribute="centerX" secondItem="xv5-e6-s2R" secondAttribute="centerX" id="uca-n8-NnD"/>
+                            <constraint firstItem="8QX-fP-DWe" firstAttribute="trailing" secondItem="QMG-o2-9hf" secondAttribute="trailing" constant="100" id="yMQ-uA-9q3"/>
+                            <constraint firstItem="Z7X-1J-Gqg" firstAttribute="leading" secondItem="8QX-fP-DWe" secondAttribute="leading" constant="100" id="z4X-Ll-0t8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Wjz-wo-n0W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MG0-9i-2dz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="424"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="bTl-1g-sen">
+            <objects>
+                <viewController id="SnF-Cj-oMc" customClass="SecondViewController" customModule="GetAuthorities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VlT-R6-6AW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-8g-tIK">
+                                <rect key="frame" x="100" y="59" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FcK-ef-MKW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="마이크 권한">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="SnF-Cj-oMc" eventType="touchUpInside" id="7Wg-K3-AhX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9X-L4-CAa">
+                                <rect key="frame" x="100" y="117" width="193" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nPL-vu-Uvp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="음성인식 권한">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn2:" destination="SnF-Cj-oMc" eventType="touchUpInside" id="Ndn-bX-emi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-bn-sdq">
+                                <rect key="frame" x="71.666666666666671" y="175" width="249.66666666666663" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Ui-OO-FXh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zqT-bn-sdq" firstAttribute="centerX" secondItem="VlT-R6-6AW" secondAttribute="centerX" id="3Su-cf-UqQ"/>
+                            <constraint firstItem="D9X-L4-CAa" firstAttribute="top" secondItem="bLy-8g-tIK" secondAttribute="bottom" constant="8" symbolic="YES" id="9ko-mX-ydO"/>
+                            <constraint firstItem="zqT-bn-sdq" firstAttribute="top" secondItem="D9X-L4-CAa" secondAttribute="bottom" constant="8" symbolic="YES" id="Cld-ur-zqQ"/>
+                            <constraint firstItem="bLy-8g-tIK" firstAttribute="top" secondItem="3Ui-OO-FXh" secondAttribute="top" id="Eia-W5-CZE"/>
+                            <constraint firstItem="3Ui-OO-FXh" firstAttribute="trailing" secondItem="D9X-L4-CAa" secondAttribute="trailing" constant="100" id="Pja-mZ-qpO"/>
+                            <constraint firstItem="D9X-L4-CAa" firstAttribute="leading" secondItem="3Ui-OO-FXh" secondAttribute="leading" constant="100" id="aCZ-Aw-fUj"/>
+                            <constraint firstItem="3Ui-OO-FXh" firstAttribute="trailing" secondItem="bLy-8g-tIK" secondAttribute="trailing" constant="100" id="eg4-Yp-tAs"/>
+                            <constraint firstItem="bLy-8g-tIK" firstAttribute="leading" secondItem="3Ui-OO-FXh" secondAttribute="leading" constant="100" id="iNL-kF-eDX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="BvD-2D-3kV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0y-eD-FVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838.9312977099237" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uJE-px-05G">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kyI-8D-2Rh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLi-E3-Aei">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bfg-0W-93m"/>
+                        <segue destination="SnF-Cj-oMc" kind="relationship" relationship="viewControllers" id="YvD-DE-zLl"/>
+                        <segue destination="33Z-t1-Olo" kind="relationship" relationship="viewControllers" id="n5t-8H-NC3"/>
+                        <segue destination="6wY-qv-Mfa" kind="relationship" relationship="viewControllers" id="n8c-kG-th2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="695-VF-yah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
